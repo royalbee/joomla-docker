@@ -4,7 +4,7 @@
 JOOMLA_VERSION=${JOOMLA_VERSION:-3.3.1}
 SERVER_NAME=${SERVER_NAME:-${1}}
 WWW_PATH=${WWW_PATH:-/var/www/vhosts}
-HTTPS_ON=${HTTPS_ON:-true}
+HTTPS_ON=${HTTPS_ON:-false}
 
 vhost_ssl_path=/etc/nginx/ssl/vhosts/${SERVER_NAME}
 ssl_key=${vhost_ssl_path}/${SERVER_NAME}.key
