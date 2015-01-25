@@ -131,7 +131,7 @@ sed -i 's/session.*required.*pam_loginuid.so/#session    required     pam_loginu
 # TODO: Is environtment variable safe? Maybe clear it after root pw is set?!
 
 echo "Setting root password"
-$rootpw = ${ROOT_PW:-root}
+rootpw=${ROOT_PW:-root}
 # set the root password
 echo 'root:'${rootpw}'' |chpasswd
 
