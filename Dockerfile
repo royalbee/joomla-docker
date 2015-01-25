@@ -12,7 +12,7 @@ FROM dockerfile/nginx
 
 ENV WWW_DIR /var/www/vhosts
 ENV MYSQL_DATA /var/mysql
-ENV JOOMLA_VERSION 3.3.1
+ENV JOOMLA_VERSION 3.3.6
 ENV SERVER_NAME example.com
 
 ###########################################################################
@@ -34,7 +34,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y --force-yes
 ###########################################################################
 #	Download the latest joomla version.                               #
 ###########################################################################
-RUN wget http://joomlacode.org/gf/download/frsrelease/19524/159412/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2
+RUN wget http://joomlacode.org/gf/download/frsrelease/19822/161254/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2
 
 
 ###########################################################################
